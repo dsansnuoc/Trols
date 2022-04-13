@@ -1,0 +1,293 @@
+h1 {
+  font-size: 4vw;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.tooltip {
+  position: relative;
+  border-bottom: 1px dashed rgb(0, 1, 85);
+}
+
+
+.tooltip:before {
+  content: attr(data-text);
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  left: 100%;
+  margin-left: 15px;
+
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgb(0, 1, 85);
+  color: #fff;
+  text-align: center;
+
+  display: none;
+}
+
+.tooltip:hover:before {
+  display: block;
+}
+
+.tooltip:after {
+  content: "";
+  position: absolute;
+
+  /* position tooltip correctly */
+  left: 100%;
+  margin-left: -5px;
+
+  /* vertically center */
+  top: 50%;
+  transform: translateY(-50%);
+
+  /* the arrow */
+  border: 10px solid rgb(0, 1, 85);
+  border-color: transparent rgb(0, 1, 85) transparent transparent;
+
+  display: none;
+}
+
+
+.tooltip:hover:before,
+.tooltip:hover:after {
+  display: block;
+}
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #FFFFFA;
+}
+
+header {
+  width: 100%;
+}
+
+header nav {
+  /* width:90%;
+    max-width:1000px; */
+  margin: 20px auto;
+  background: #0593b3;
+}
+
+.menu_bar {
+  display: none;
+}
+
+header nav ul {
+  overflow: hidden;
+  list-style: none;
+}
+
+header nav ul li {
+  float: left;
+}
+
+header nav ul li a {
+  color: #fff;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+}
+
+header nav ul li a:visited {
+  color: #fff;
+
+}
+
+/*
+header nav ul li a:hover {
+  color: #FFFFFA;
+  text-decoration: dashed;
+}
+*/
+header nav ul li span {
+  margin-right: 10px;
+}
+
+header nav ul li a:hover {
+  background: #037E8C;
+}
+
+section {
+  padding: 20px;
+}
+
+
+
+@media screen and (max-width:800px) {
+  header nav {
+    width: 80%;
+    height: 100%;
+    left: -100%;
+    margin: 0;
+    position: fixed;
+  }
+
+  header nav ul li {
+    display: block;
+    float: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+  }
+
+  .menu_bar {
+    display: block;
+    width: 100%;
+    background: #ccc;
+  }
+
+  .menu_bar .bt-menu {
+    display: block;
+    padding: 20px;
+    background: #0593b3;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .menu_bar span {
+    float: left;
+    font-size: 40px;
+  }
+
+
+
+
+
+}
+
+
+
+
+.mindex {
+
+  width: 100%;
+  height: 87vh;
+  background-image: url("../img/Monte-Floyen-Bergen.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: rgb(255, 255, 255);
+  opacity: 0.75;
+  overflow: auto;
+
+
+}
+
+.pStyle {
+  font-size: 2vw;
+  text-align: center;
+
+}
+
+
+/* Diseño para tabletas */
+@media screen and (min-width: 800px) {
+
+  #columna1,
+  #columna2,
+  .columnav1,
+  .columnav2 {
+    float: left;
+    width: 50%;
+  }
+}
+
+
+
+/* Diseño para PC */
+@media screen and (min-width: 1025px) {
+
+  #columna1,
+  #columna2,
+  #columna3 {
+    float: left;
+    width: 33%;
+  }
+}
+
+/* Diseño para celulares */
+#columna1,
+#columna2,
+#columna3,
+.columnav1,
+.columnav2 {
+  float: none;
+  width: 100%;
+}
+
+
+.columnes {
+
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.txtTitulNoticia {
+  color: #fff;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.txtTNoticia {
+  font-size: 18px;
+  color: rgba(255, 255, 255);
+  font-weight: 500;
+}
+
+
+.centrar_ul {
+
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  justify-content: space-around;
+  text-align: center;
+
+}
+
+
+.imgSimptomes {
+  border-radius: 15px;
+  border: #000 solid 2px;
+  width: 25%;
+  opacity: 1;
+}
+
+a {
+  color: #fff;
+
+}
+
+a:visited {
+  color: #fff;
+
+}
+
+a:hover {
+  background: #037E8C;
+
+}
