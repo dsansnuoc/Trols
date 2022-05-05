@@ -2,8 +2,9 @@
   "name": "els-trols",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "clean:output": "rimraf dist",
+    "start": "npm run clean:output && parcel src/index.html",
+    "build": "npm run clean:output && parcel build src/index.html"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.4.0",

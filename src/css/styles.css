@@ -295,3 +295,69 @@ a:hover {
   background: #037E8C;
 
 }
+
+
+
+
+
+footer {
+  width: 100%;
+}
+
+footer nav {
+  /* width:90%;
+    max-width:1000px; */
+  margin: 20px auto;
+  background: #0593b3;
+}
+
+
+footer nav ul {
+  overflow: hidden;
+  list-style: none;
+}
+
+footer nav ul li {
+  float: left;
+}
+
+footer nav ul li a {
+  color: #fff;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+}
+
+footer nav ul li a:visited {
+  color: #fff;
+
+}
+
+/*
+header nav ul li a:hover {
+  color: #FFFFFA;
+  text-decoration: dashed;
+}
+*/
+footer nav ul li span {
+  margin-right: 10px;
+}
+
+footer nav ul li a:hover {
+  background: #037E8C;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.clip-element {
+  clip-path: polygon(74% 23%, 65% 5%, 37% 5%, 27% 27%, 5% 31%, 6% 59%, 24% 68%, 34% 95%, 62% 95%, 75% 77%, 93% 63%, 94% 30%);
+  -webkit-clip-path: polygon(74% 23%, 65% 5%, 37% 5%, 27% 27%, 5% 31%, 6% 59%, 24% 68%, 34% 95%, 62% 95%, 75% 77%, 93% 63%, 94% 30%);
+}
